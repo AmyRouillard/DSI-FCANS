@@ -27,3 +27,8 @@ Regardless of your investment strategy, fluctuations are expected in the financi
 ## 7. References
 
 ## 8. Authors
+* [Amy](https://github.com/AmyRouillard)
+* [Nancy]
+* [Chris]
+* [Sitwala](https://github.com/SitwalaM)
+
