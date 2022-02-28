@@ -1,5 +1,5 @@
 # Ubiquant market predictions Time-Series Kaggle Competition
-
+![cover](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/cover_image.png)
 
 ## 1. Introduction
 
