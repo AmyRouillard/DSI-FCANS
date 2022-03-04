@@ -21,7 +21,7 @@ Regardless of your investment strategy, fluctuations are expected in the financi
 
 ## 5. Approaches
 
-With all the models we used for this project, we tried different fine-tuning approaches hoping for better model performance. In this section, we will discuss and show all the fine tunings we did and show their performance and final scores.
+With all the models we used for this project, we tried different fine-tuning approaches hoping for better model performance. In this section, we will discuss and show all the fine tunings and different activation functions we tried and show their performance and final scores.
 
 ### DNN with the Leaky Relu Activation Function
 
@@ -52,28 +52,28 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 
 *source: https://neptune.ai/blog/lightgbm-parameters-guide*
 
-|                             |             |            |            
-|-----------------------------|-------------|------------|
-| Objective                   |  Regression | Regression |  
-| Metric                      |  MSE        | MSE        | 
-| Boosting_type               |  gbdt       | gbdt       |  
-| lambda_l1                   | 2.3e-05     | 2.3e-05    |    
-| lambda_l2                   | 0.1         | 0.1        |   
-| num_leaves                  | 4           | 10         |    
-| Feature_fraction            | 0.5         | 0.6        |    
-| Bagging_fraction            | 0.9         | 0.8        |    
-| Bagging_freq                | 7           | 6          |     
-| min_child_samples           | 20          | 20         |    
-| num_iterations              | 1000        | 1000       |  
-| learning_rate               |             | 0.1        |  
-| max_depth                   |             | 10         |   
-| MSE                         | 0.8055      | 0.8055     |     
-| MSE(new features)           | 0.8052      | 0.8052     |     
-| RMSE                        | 0.8975      | 0.8975     |     
-| RMSE(new features)          | 0.8974      | 0.8974     |     
-| Pearson Corr.               | 0.1260      | 0.1260     |     
-| Pearson Corr.(new features) | 0.1272      | 0.1272     |
-| Score                       | 0.108       | 0.108      |     
+|                             |             |            |            |
+|-----------------------------|-------------|------------|------------|
+| Objective                   |  Regression | Regression | Regression | 
+| Metric                      |  MSE        | MSE        | MSE        |
+| Boosting_type               |  gbdt       | gbdt       | gbdt       |
+| lambda_l1                   | 2.3e-05     | 2.3e-05    | 2.3e-05    |   
+| lambda_l2                   | 0.1         | 0.1        | 0.1        |
+| num_leaves                  | 4           | 10         | 4          |
+| Feature_fraction            | 0.5         | 0.6        | 0.5        | 
+| Bagging_fraction            | 0.9         | 0.8        | 0.9        |
+| Bagging_freq                | 7           | 6          | 7          |
+| min_child_samples           | 20          | 20         | 20         |
+| num_iterations              | 1000        | 1000       | 1000       |
+| learning_rate               |             | 0.1        | 0.1        |
+| max_depth                   |             | 10         | 10         |
+| MSE                         | 0.8055      | 0.8055     | 0.8055     |    
+| MSE(new features)           | 0.8052      | 0.8052     | 0.8975     |   
+| RMSE                        | 0.8975      | 0.8975     | 0.8974     |  
+| RMSE(new features)          | 0.8974      | 0.8974     | 0.8974     | 
+| Pearson Corr.               | 0.1260      | 0.1260     | 0.1260     | 
+| Pearson Corr.(new features) | 0.1272      | 0.1272     | 0.1272     |
+| Score                       | 0.108       | 0.108      | 0.108      |
 
 In the LightGBM notebook, we first used all 300 features before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
 Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table above, all the metrics and scores remained the same.
@@ -81,14 +81,29 @@ Fine-tuning the parameters of the LightGBM did not improve the model in any way.
 ### DNN with Swish Activation Function
 
 Swish is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks. It is unbounded above and bounded below & it is the non-monotonic attribute that actually creates the difference.
-......function to be added ....
-to be continued
-|               |        |        |        | 
-|---------------|--------|--------|--------|
-| Learning Rate | 0.001  | 0.001    | 0.0025|   
-| Epochs        | 30   | 50  | 10000  |   
-| Pearson Corr. | 0.1220| 0.1164 | 0.9128 |   
-| Score         | 0.15  | 0.149  | 0.143  |   
+  
+|               |        |        |        |        |        |        |
+|---------------|--------|--------|--------|--------|--------|--------|
+| Learning Rate | 0.001  | 0.001  | 0.0005 | 0.0025 | 0.0005 | 0.0005 |
+| Epochs        | 30     | 50     | 50     | 50     | 30     | 20     |
+| Pearson Corr. | 0.1220 | 0.1164 | 0.1140 | 0.1193 | 0.1100 |        |
+| Score         | 0.15   | 0.149  | 0.146  | 0.142  | 0.147  | 0.144  |
+
+
+### DNN with Mish Activation
+
+*source: https://krutikabapat.github.io/Swish-Vs-Mish-Latest-Activation-Functions/*
+
+The research we did showed Mish worked better than the Swish activation function but that was not the case when we applied it to our DNN model. The performance kept diminishing with every change we made to the hyperparameters.
+
+|               |        |        |        |        |       |       |
+|---------------|--------|--------|--------|--------|-------|-------|
+| Dropout Rate  | 0.2    | 0.2    | 0.5    |   0.5  | 0.1   | 0.1   |
+| Epochs        | 30     | 50     | 50     |  100   | 50    | 30    |
+| Pearson Corr. |        |        |        |        |       |       |
+| Score         | 0.143  | 0.146  | 0.143  |  0.143 | 0.146 | 0.143 |
+
+
 
 ## 6. Final Model Results
 
