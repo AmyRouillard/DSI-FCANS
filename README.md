@@ -21,10 +21,11 @@ Regardless of your investment strategy, fluctuations are expected in the financi
 
 ## 5. Approaches
 
-With all the models we used for this project, we tried different fine tuning approaches hoping for a better model performance. In this section, we will discuss and show all the fine tunings we did and show its performance and final scores.
+With all the models we used for this project, we tried different fine-tuning approaches hoping for better model performance. In this section, we will discuss and show all the fine tunings we did and show their performance and final scores.
 
 ### DNN with the Leaky Relu Activation Function
-Leaky ReLU function is an improved version of the ReLU activation function. As for the ReLU activation function, the gradient is 0 for all the values of inputs that are less than zero, which would deactivate the neurons in that region and may cause dying ReLU problem. Leaky ReLU addresses this problem. Instead of defining the ReLU activation function as 0 for negative values of inputs(x), we define it as an extremely small linear component of x
+
+Leaky ReLU function is an improved version of the ReLU activation function. As for the ReLU activation function, the gradient is 0 for all the values of inputs that are less than zero, which would deactivate the neurons in that region and may cause a dying ReLU problem. Leaky ReLU addresses this problem. Instead of defining the ReLU activation function as 0 for negative values of inputs(x), we define it as an extremely small linear component of x.
 
 Relu Function:
 
@@ -36,18 +37,58 @@ Leaky Relu Function:
 
 *source:https://www.mygreatlearning.com/blog/relu-activation-function/*
 
-For the hyper parameter tuning, we modified the Dropout Rate, Learning Rate and Decay Steps.
+For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and Decay Steps as shown in the table below; 
 
-|              |   -----|     |     | 
-|--------------|--------|-----|-----|
-|Dropout Rate  | 0.4    | 0.5    | 0.8    |  
-|Learning Rate | 0.003  | 0.1    | 0.001  |   
-|Decay Steps   | 9700   | 10000  | 10000  |   
-|RMSE          | 0.9104 | 0.9123 | 0.9128 |   
-|MSE           | 0.9151 | 0.9152 | 0.9143 |   
-|Score         |        | 0.143  | 0.143  |   
+|               |        |        |        | 
+|---------------|--------|--------|--------|
+| Dropout Rate  | 0.4    | 0.5    | 0.8    |  
+| Learning Rate | 0.003  | 0.1    | 0.001  |   
+| Decay Steps   | 9700   | 10000  | 10000  |   
+| RMSE          | 0.9104 | 0.9123 | 0.9128 |   
+| MSE           | 0.9151 | 0.9152 | 0.9143 |   
+| Score         | 0.144  | 0.143  | 0.143  |   
 
+### LightGBM
 
+*source: https://neptune.ai/blog/lightgbm-parameters-guide*
+
+|                             |             |            |            | 
+|-----------------------------|-------------|------------|
+| Objective                   |  Regression | Regression |  
+| Metric                      |  MSE        | MSE        | 
+| Boosting_type               |  gbdt       | gbdt       |  
+| lambda_l1                   | 2.3e-05     | 2.3e-05    |    
+| lambda_l2                   | 0.1         | 0.1        |   
+| num_leaves                  | 4           | 10         |    
+| Feature_fraction            | 0.5         | 0.6        |    
+| Bagging_fraction            | 0.9         | 0.8        |    
+| Bagging_freq                | 7           | 6          |     
+| min_child_samples           | 20          | 20         |    
+| num_iterations              | 1000        | 1000       |  
+| learning_rate               |             | 0.1        |  
+| max_depth                   |             | 10         |   
+| MSE                         | 0.8055      | 0.8055     |     
+| MSE(new features)           | 0.8052      | 0.8052     |     
+| RMSE                        | 0.8975      | 0.8975     |     
+| RMSE(new features)          | 0.8974      | 0.8974     |     
+| Pearson Corr.               | 0.1260      | 0.1260     |     
+| Pearson Corr.(new features) | 0.1272      | 0.1272     |
+| Score                       | 0.108       | 0.108      |     
+
+In the LightGBM notebook, we first used all 300 features before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
+Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table above, all the metrics and scores remained the same.
+
+### DNN with Swish Activation Function
+
+Swish is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks. It is unbounded above and bounded below & it is the non-monotonic attribute that actually creates the difference.
+......function to be added ....
+to be continued
+|               |        |        |        | 
+|---------------|--------|--------|--------|
+| Learning Rate | 0.001  | 0.001    | 0.0025|   
+| Epochs        | 30   | 50  | 10000  |   
+| Pearson Corr. | 0.1220| 0.1164 | 0.9128 |   
+| Score         | 0.15  | 0.149  | 0.143  |   
 
 ## 6. Final Model Results
 
