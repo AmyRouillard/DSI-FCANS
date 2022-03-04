@@ -38,11 +38,16 @@ Leaky Relu Function:
 
 For the hyper parameter tuning, we modified the Dropout Rate, Learning Rate and Decay Steps.
 
-|                |   |   |   |   |
-|----------------|---|---|---|---|
-|Droupout Rate   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+
+|--------------|---|---|---|---|
+|Dropout Rate  |   |   |   |   |
+|Learning Rate |   |   |   |   |
+|Decay Steps   |   |   |   |   |
+|RMSE          |   |   |   |   |
+|MSE           |   |   |   |   |
+|SCore         |   |   |   |   |
+
+
 
 ## 6. Final Model Results
 
