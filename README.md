@@ -19,14 +19,20 @@ Regardless of your investment strategy, fluctuations are expected in the financi
 ### Model 2
 ### Model 3
 
-## 5. Final Model Results
+## 5. Approaches
 
-## 6. Conclusions
+With all the models we used for this project, we tried different fine tuning approaches hoping for a better model performance. In this section, we will discuss and show all the fine tunings we did and show its performance and final scores.
+
+### DNN with the Leaky Relu Activation Function
+
+## 6. Final Model Results
+
+## 7. Conclusions
 
 
-## 7. References
+## 8. References
 
-## 8. Authors
+## 9. Authors
 * [Amy](https://github.com/AmyRouillard)
 * [Nancy]
 * [Chris]
