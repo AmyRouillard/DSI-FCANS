@@ -52,7 +52,7 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 
 *source: https://neptune.ai/blog/lightgbm-parameters-guide*
 
-|                             |             |            |            | 
+|                             |             |            |            
 |-----------------------------|-------------|------------|
 | Objective                   |  Regression | Regression |  
 | Metric                      |  MSE        | MSE        | 
