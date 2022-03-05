@@ -2,12 +2,14 @@
 ![cover](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/cover_image.png)
 
 ## 1. Introduction
-add suff
+This repository details the work done by Team C for the [Africa Data Science Intensive (DSI) program](http://dsi-program.com/) Module 2 task. The goal of the task was to compete in the time-series prediction competition by [Ubiquant](https://www.kaggle.com/c/ubiquant-market-prediction) on Kaggle. Time-series forecasting is a critical part of data science with many use cases such as epidimeology, inventory planning for businesses, stock trading etc. The different models and approaches used for the competition are detailed here.  
 
 ## 2. Competition Description
-Ubiquant market predictions
+Competion Description taken from Kaggle:
 
-Regardless of your investment strategy, fluctuations are expected in the financial market. Despite this variance, professional investors try to estimate their overall returns. Risks and returns differ based on investment types and other factors, which impact stability and volatility. To attempt to predict returns, there are many computer-based algorithms and models for financial market trading. Yet, with new techniques and approaches, data science could improve quantitative researchers' ability to forecast an investment's return.
+"Regardless of your investment strategy, fluctuations are expected in the financial market. Despite this variance, professional investors try to estimate their overall returns. Risks and returns differ based on investment types and other factors, which impact stability and volatility. To attempt to predict returns, there are many computer-based algorithms and models for financial market trading. Yet, with new techniques and approaches, data science could improve quantitative researchers' ability to forecast an investment's return."
+
+"In this competition, you’ll build a model that forecasts an investment's return rate. Train and test your algorithm on historical prices. Top entries will solve this real-world data science problem with as much accuracy as possible."
 
 ## 3. EDA/Feature Engineering 
 
@@ -111,10 +113,11 @@ The research we did showed Mish worked better than the Swish activation function
 
 
 ## 8. References
-
+1. [Keras Documentation](https://keras.io/api/)
+2. [Optuna](https://optuna.readthedocs.io/en/stable/)
 ## 9. Authors
 * [Amy](https://github.com/AmyRouillard)
-* [Nancy]
-* [Chris]
+* [Nancy](https://github.com/NancyArmah)
+* [Chris](https://github.com/chrisliti)
 * [Sitwala](https://github.com/SitwalaM)
 
