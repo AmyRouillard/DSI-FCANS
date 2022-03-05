@@ -11,9 +11,13 @@ Competion Description taken from Kaggle:
 
 "In this competition, you’ll build a model that forecasts an investment's return rate. Train and test your algorithm on historical prices. Top entries will solve this real-world data science problem with as much accuracy as possible."
 
-## 3. EDA/Feature Engineering 
-
-
+## 3. EDA
+### Dataset Description
+* row_id - A unique identifier for the row.
+* time_id - The ID code for the time the data was gathered. The time IDs are in order, but the real time between the time IDs is not constant and will likely be shorter for the * final private test set than in the training set.
+* investment_id - The ID code for an investment. Not all investment have data in all time IDs.
+* target - The target.
+* [f_0:f_299] - Anonymized features generated from market data.
 
 ## 4. Models 
 
