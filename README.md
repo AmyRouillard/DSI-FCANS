@@ -81,7 +81,8 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 | Pearson Corr.(new features) | 0.1272      | 0.1272     | 0.1272     |
 | Score                       | 0.108       | 0.108      | 0.108      |
 
-In the LightGBM notebook, we first used all 300 features before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
+In the first notebook, we ran the model without a learning rate and a max_depth but applied it to the last two runs to compare results. It had no effect on the performance of the model
+Also all 300 features were used initially before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
 Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table above, all the metrics and scores remained the same.
 
 ### DNN with Swish Activation Function
@@ -92,7 +93,7 @@ Swish is a smooth, non-monotonic function that consistently matches or outperfor
 |---------------|--------|--------|--------|--------|--------|--------|
 | Learning Rate | 0.001  | 0.001  | 0.0005 | 0.0025 | 0.0005 | 0.0005 |
 | Epochs        | 30     | 50     | 50     | 50     | 30     | 20     |
-| Pearson Corr. | 0.1220 | 0.1164 | 0.1140 | 0.1193 | 0.1100 |        |
+| Pearson Corr. | 0.1220 | 0.1164 | 0.1140 | 0.1193 | 0.1100 | 0.1194 |
 | Score         | 0.15   | 0.149  | 0.146  | 0.142  | 0.147  | 0.144  |
 
 
@@ -102,12 +103,12 @@ Swish is a smooth, non-monotonic function that consistently matches or outperfor
 
 The research we did showed Mish worked better than the Swish activation function but that was not the case when we applied it to our DNN model. The performance kept diminishing with every change we made to the hyperparameters.
 
-|               |        |        |        |        |       |       |
-|---------------|--------|--------|--------|--------|-------|-------|
-| Dropout Rate  | 0.2    | 0.2    | 0.5    |   0.5  | 0.1   | 0.1   |
-| Epochs        | 30     | 50     | 50     |  100   | 50    | 30    |
-| Pearson Corr. |        |        |        |        |       |       |
-| Score         | 0.143  | 0.146  | 0.143  |  0.143 | 0.146 | 0.143 |
+|               |        |        |        |        |        |        |
+|---------------|--------|--------|--------|--------|--------|--------|
+| Dropout Rate  | 0.2    | 0.2    | 0.5    |   0.5  | 0.1    | 0.1    |
+| Epochs        | 30     | 50     | 50     |  100   | 50     | 30     |
+| Pearson Corr. | 0.1380 | 0.1280 | 0.1314 | 0.1338 | 0.1434 | 0.1319 |
+| Score         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
 
 
 
