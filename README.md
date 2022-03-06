@@ -5,18 +5,19 @@
 This repository details the work done by Team C for the [Africa Data Science Intensive (DSI) program](http://dsi-program.com/) Module 2 task. The goal of the task was to compete in the time-series prediction competition by [Ubiquant](https://www.kaggle.com/c/ubiquant-market-prediction) on Kaggle. Time-series forecasting is a critical part of data science with many use cases such as epidimeology, inventory planning for businesses, stock trading etc. The different models and approaches used for the competition are detailed here.  
 
 ### Code
-| File                                                                                                                            | Description                                               |
-|---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| Main Notebook                                                                                                                   | Main notebook with EDA and Discussions on Models          |
-| Ensemble Inference                                                                                                              | Notebook that loads weights and makes ensemble prediction |
-| [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb)                 | Model 1 DNN Model used in Ensemble Model                  |
-| [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-2-10fold-model-2.ipynb)           | Model 2 DNN Model used in Ensemble Model                  |
-| [Model 3 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-3-10fold.ipynb)                   | Model 3 DNN Model used in Ensemble Model                  |
-| place holder                                                                                                                    | place holder                                              |
-| place holder                                                                                                                    |  place holder                                             |
-| [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/investment-id-clustering.ipynb) | Kmeans CLustering of Investment IDs                       |
-| Model 1 DNN Optimization                                                                                                        | Study of relu activation Vs swish activation              |
-| Model 2 DNN Optimization                                                                                                        | Study of dropout layers in DNN                            |
+
+| File  | Description |
+|---|---|
+| Main Notebook | Main notebook with EDA and Discussions on Models |
+| Ensemble Inference | Notebook that loads weights and makes ensemble prediction |
+| [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb) | Model 1 DNN Model used in Ensemble Model |
+| [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-2-10fold-model-2.ipynb) | Model 2 DNN Model used in Ensemble Model |
+| [Model 3 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-3-10fold.ipynb) | Model 3 DNN Model used in Ensemble Model |
+| place holder  | place holder |
+| place holder |  place holder |
+| [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/investment-id-clustering.ipynb) | Kmeans CLustering of Investment IDs |
+| Model 1 DNN Optimization | Study of relu activation Vs swish activation |
+| Model 2 DNN Optimization | Study of dropout layers in DNN |
 
 
 ## 2. Competition Description
