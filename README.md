@@ -4,7 +4,7 @@
 ## 1. Introduction
 This repository details the work done by Team C for the [Africa Data Science Intensive (DSI) program](http://dsi-program.com/) Module 2 task. The goal of the task was to compete in the time-series prediction competition by [Ubiquant](https://www.kaggle.com/c/ubiquant-market-prediction) on Kaggle. Time-series forecasting is a critical part of data science with many use cases such as epidimeology, inventory planning for businesses, stock trading etc. The different models and approaches used for the competition are detailed here.  
 
-### Code
+### Code Files
 
 | File  | Description |
 |---|---|
