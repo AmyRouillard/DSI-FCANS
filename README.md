@@ -25,7 +25,7 @@ Competion Description taken from Kaggle:
 ### Model 2
 ### Model 3
 
-## 5. Approaches
+## 5. Other Approaches 
 
 With all the models we used for this project, we tried different fine-tuning approaches hoping for better model performance. In this section, we will discuss and show all the fine tunings and different activation functions we tried and show their performance and final scores.
 
