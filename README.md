@@ -44,12 +44,12 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 
 |               |        |        |        | 
 |---------------|--------|--------|--------|
-| Dropout Rate  | 0.4    | 0.5    | 0.8    |  
-| Learning Rate | 0.003  | 0.1    | 0.001  |   
-| Decay Steps   | 9700   | 10000  | 10000  |   
-| RMSE          | 0.9104 | 0.9123 | 0.9128 |   
-| MSE           | 0.9151 | 0.9152 | 0.9143 |   
-| Score         | 0.144  | 0.143  | 0.143  |   
+| **Dropout Rate**  | 0.4    | 0.5    | 0.8    |  
+| **Learning Rate** | 0.003  | 0.1    | 0.001  |   
+| **Decay Steps**   | 9700   | 10000  | 10000  |   
+|**RMSE**         | 0.9104 | 0.9123 | 0.9128 |   
+|**MSE**           | 0.9151 | 0.9152 | 0.9143 |   
+| **Score**         | 0.144  | 0.143  | 0.143  |   
 
 ### LightGBM
 
@@ -61,26 +61,26 @@ Fine-tuning the parameters of the LightGBM did not improve the model in any way.
 
 |                             |             |            |            |
 |-----------------------------|-------------|------------|------------|
-| Objective                   |  Regression | Regression | Regression | 
-| Metric                      |  MSE        | MSE        | MSE        |
-| Boosting_type               |  gbdt       | gbdt       | gbdt       |
-| lambda_l1                   | 2.3e-05     | 2.3e-05    | 2.3e-05    |   
-| lambda_l2                   | 0.1         | 0.1        | 0.1        |
-| num_leaves                  | 4           | 10         | 4          |
-| Feature_fraction            | 0.5         | 0.6        | 0.5        | 
-| Bagging_fraction            | 0.9         | 0.8        | 0.9        |
-| Bagging_freq                | 7           | 6          | 7          |
-| min_child_samples           | 20          | 20         | 20         |
-| num_iterations              | 1000        | 1000       | 1000       |
-| learning_rate               |             | 0.1        | 0.1        |
-| max_depth                   |             | 10         | 10         |
-| MSE                         | 0.8055      | 0.8055     | 0.8055     |    
-| MSE(new features)           | 0.8052      | 0.8052     | 0.8975     |   
-| RMSE                        | 0.8975      | 0.8975     | 0.8974     |  
-| RMSE(new features)          | 0.8974      | 0.8974     | 0.8974     | 
-| Pearson Corr.               | 0.1260      | 0.1260     | 0.1260     | 
-| Pearson Corr.(new features) | 0.1272      | 0.1272     | 0.1272     |
-| Score                       | 0.108       | 0.108      | 0.108      |
+| **Objective**               |  Regression | Regression | Regression | 
+| **Metric**                  |  MSE        | MSE        | MSE        |
+| **Boosting_type**           |  gbdt       | gbdt       | gbdt       |
+| **lambda_l1**               | 2.3e-05     | 2.3e-05    | 2.3e-05    |   
+| **lambda_l2**               | 0.1         | 0.1        | 0.1        |
+| **num_leaves**              | 4           | 10         | 4          |
+| **Feature_fraction**        | 0.5         | 0.6        | 0.5        | 
+| **Bagging_fraction**        | 0.9         | 0.8        | 0.9        |
+| **Bagging_freq**            | 7           | 6          | 7          |
+| **min_child_samples**       | 20          | 20         | 20         |
+| **num_iterations**          | 1000        | 1000       | 1000       |
+| **learning_rate**           |             | 0.1        | 0.1        |
+| **max_depth**               |             | 10         | 10         |
+| **MSE**                     | 0.8055      | 0.8055     | 0.8055     |    
+| **MSE(new features)**       | 0.8052      | 0.8052     | 0.8975     |   
+| **RMSE**                    | 0.8975      | 0.8975     | 0.8974     |  
+| **RMSE(new features)**      | 0.8974      | 0.8974     | 0.8974     | 
+| **Pearson Corr.**           | 0.1260      | 0.1260     | 0.1260     | 
+| **Pearson Corr.(new features)** | 0.1272      | 0.1272     | 0.1272     |
+| **Score**                       | 0.108       | 0.108      | 0.108      |
 
 
 ### DNN with Swish Activation Function
@@ -90,10 +90,10 @@ Fine-tuning the parameters of the LightGBM did not improve the model in any way.
 Swish is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks. 
 |               |        |        |        |        |        |        |
 |---------------|--------|--------|--------|--------|--------|--------|
-| Learning Rate | 0.001  | 0.001  | 0.0005 | 0.0025 | 0.0005 | 0.0005 |
-| Epochs        | 30     | 50     | 50     | 50     | 30     | 20     |
-| Pearson Corr. | 0.1220 | 0.1164 | 0.1140 | 0.1193 | 0.1100 | 0.1194 |
-| Score         | 0.15   | 0.149  | 0.146  | 0.142  | 0.147  | 0.144  |
+| **Learning Rate** | 0.001  | 0.001  | 0.0005 | 0.0025 | 0.0005 | 0.0005 |
+| **Epochs**        | 30     | 50     | 50     | 50     | 30     | 20     |
+| **Pearson Corr.** | 0.1220 | 0.1164 | 0.1140 | 0.1193 | 0.1100 | 0.1194 |
+| **Score**         | 0.15   | 0.149  | 0.146  | 0.142  | 0.147  | 0.144  |
 
 
 ### DNN with Mish Activation
@@ -104,10 +104,10 @@ The research we did showed Mish worked better than the Swish activation function
 
 |               |        |        |        |        |        |        |
 |---------------|--------|--------|--------|--------|--------|--------|
-| Dropout Rate  | 0.2    | 0.2    | 0.5    |   0.5  | 0.1    | 0.1    |
-| Epochs        | 30     | 50     | 50     |  100   | 50     | 30     |
-| Pearson Corr. | 0.1380 | 0.1280 | 0.1314 | 0.1338 | 0.1434 | 0.1319 |
-| Score         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
+|**Dropout Rate**  | 0.2    | 0.2    | 0.5    |   0.5  | 0.1    | 0.1    |
+| **Epochs**        | 30     | 50     | 50     |  100   | 50     | 30     |
+| **Pearson Corr.** | 0.1380 | 0.1280 | 0.1314 | 0.1338 | 0.1434 | 0.1319 |
+| **Score**         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
 
 
 ## 6. Conclusions
