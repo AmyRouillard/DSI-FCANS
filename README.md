@@ -43,7 +43,7 @@ Leaky Relu Function:
 
 *source:https://www.mygreatlearning.com/blog/relu-activation-function/*
 
-For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and Decay Steps as shown in the table below; 
+For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and Decay Steps as shown in the table below to compare performance; 
 
 |               |        |        |        | 
 |---------------|--------|--------|--------|
@@ -57,6 +57,10 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 ### LightGBM
 
 *source: https://neptune.ai/blog/lightgbm-parameters-guide*
+
+In the first notebook, we ran the model without a learning rate and a max_depth but applied it to the last two runs to compare results. It had no effect on the performance of the model
+Also all 300 features were used initially before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
+Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table below, all the metrics and scores remained the same.
 
 |                             |             |            |            |
 |-----------------------------|-------------|------------|------------|
@@ -81,14 +85,12 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 | Pearson Corr.(new features) | 0.1272      | 0.1272     | 0.1272     |
 | Score                       | 0.108       | 0.108      | 0.108      |
 
-In the first notebook, we ran the model without a learning rate and a max_depth but applied it to the last two runs to compare results. It had no effect on the performance of the model
-Also all 300 features were used initially before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
-Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table above, all the metrics and scores remained the same.
 
 ### DNN with Swish Activation Function
 
-Swish is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks. It is unbounded above and bounded below & it is the non-monotonic attribute that actually creates the difference.
-  
+*source: https://medium.com/@neuralnets/swish-activation-function-by-google-53e1ea86f820#:~:text=Swish%20is%20a%20smooth%2C%20non,that%20actually%20creates%20the%20difference* 
+
+Swish is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks. 
 |               |        |        |        |        |        |        |
 |---------------|--------|--------|--------|--------|--------|--------|
 | Learning Rate | 0.001  | 0.001  | 0.0005 | 0.0025 | 0.0005 | 0.0005 |
@@ -101,7 +103,7 @@ Swish is a smooth, non-monotonic function that consistently matches or outperfor
 
 *source: https://krutikabapat.github.io/Swish-Vs-Mish-Latest-Activation-Functions/*
 
-The research we did showed Mish worked better than the Swish activation function but that was not the case when we applied it to our DNN model. The performance kept diminishing with every change we made to the hyperparameters.
+The research we did showed Mish worked better than the Swish activation function when dropout rates between 0.2 to 0.75 is used but that was not the case when we applied it to our DNN model. Swish averagely produced better scores than Mish. 
 
 |               |        |        |        |        |        |        |
 |---------------|--------|--------|--------|--------|--------|--------|
