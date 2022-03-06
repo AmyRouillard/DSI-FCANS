@@ -19,11 +19,8 @@ Competion Description taken from Kaggle:
 * **target** - The target.
 * **[f_0:f_299]** - Anonymized features generated from market data.
 
-## 4. Models 
+## 4. Model
 
-### Model 1
-### Model 2
-### Model 3
 
 ## 5. Other Approaches 
 
@@ -41,7 +38,7 @@ Leaky Relu Function:
 
    f(x)=max(0.01*x , x)
 
-*source:https://www.mygreatlearning.com/blog/relu-activation-function/*
+*source: https://www.mygreatlearning.com/blog/relu-activation-function/*
 
 For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and Decay Steps as shown in the table below to compare performance; 
 
@@ -88,7 +85,7 @@ Fine-tuning the parameters of the LightGBM did not improve the model in any way.
 
 ### DNN with Swish Activation Function
 
-*source: https://medium.com/@neuralnets/swish-activation-function-by-google-53e1ea86f820#:~:text=Swish%20is%20a%20smooth%2C%20non,that%20actually%20creates%20the%20difference* 
+*source: [medium](https://medium.com/@neuralnets/swish-activation-function-by-google-53e1ea86f820#:~:text=Swish%20is%20a%20smooth%2C%20non,that%20actually%20creates%20the%20difference*) 
 
 Swish is a smooth, non-monotonic function that consistently matches or outperforms ReLU on deep networks. 
 |               |        |        |        |        |        |        |
@@ -113,16 +110,13 @@ The research we did showed Mish worked better than the Swish activation function
 | Score         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
 
 
-
-## 6. Final Model Results
-
-## 7. Conclusions
+## 6. Conclusions
 
 
-## 8. References
+## 7. References
 1. [Keras Documentation](https://keras.io/api/)
 2. [Optuna](https://optuna.readthedocs.io/en/stable/)
-## 9. Authors
+## 8. Authors
 * [Amy](https://github.com/AmyRouillard)
 * [Nancy](https://github.com/NancyArmah)
 * [Chris](https://github.com/chrisliti)
