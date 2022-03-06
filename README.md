@@ -59,7 +59,7 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 *source: https://neptune.ai/blog/lightgbm-parameters-guide*
 
 In the first notebook, we ran the model without a learning rate and a max_depth but applied it to the last two runs to compare results. It had no effect on the performance of the model
-Also all 300 features were used initially before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
+Also, all 300 features were used initially before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
 Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table below, all the metrics and scores remained the same.
 
 |                             |             |            |            |
