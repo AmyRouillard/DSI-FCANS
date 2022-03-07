@@ -10,16 +10,17 @@ This repository details the work done by Team C for the [Africa Data Science Int
 |---|---|
 | [Main Notebook](https://github.com/AmyRouillard/DSI-FCANS/blob/main/main-notebook-team-c.ipynb) | Main notebook with EDA and Discussions on Models |
 | [Ensemble Inference](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/ensemble-model-fscans.ipynb) | Notebook that loads weights and makes ensemble prediction |
-| [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb) | Model 1 DNN Model used in Ensemble Model |
-| [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-2-10fold-model-2.ipynb) | Model 2 DNN Model used in Ensemble Model |
-| [Model 3 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-3-10fold.ipynb) | Model 3 DNN Model used in Ensemble Model |
-| [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/investment-id-clustering.ipynb) | Kmeans Clustering of Investment IDs |
-| [Model 1 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/base_optimize.py) | Study of relu activation Vs swish activation in model 1 |
-| [Model 2 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/model2_optimize.py) | Study of dropout layers in model 2 |
-| [EDA and Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-0-eda-and-clustering.ipynb) | EDA and hierarchical clustering of investment IDs using Pearson correlations |
-| [Data Preparation (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-1-data-preperation.ipynb) | Data pre-proccessing for multi-variate time series model with LSTM |
-| [Training (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-2-training.ipynb) | Training of multi-variate time series model with LSTM |
-| [Time Series Forcasting](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-3-submission.ipynb) | Preditict target using multi-variate time series model with LSTM |
+| [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/dnn-base-model-1.ipynb) | Model 1 DNN Model used in Ensemble Model |
+| [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/model-2-10fold-model-2.ipynb) | Model 2 DNN Model used in Ensemble Model |
+| [Model 3 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/model-3-10fold.ipynb) | Model 3 DNN Model used in Ensemble Model |
+| [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/investment-id-clustering.ipynb) | Kmeans Clustering of Investment IDs |
+| [Model 1 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/main/scripts/base_optimize.py) | Study of relu activation Vs swish activation in model 1 |
+| [Model 2 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/main/scripts/model2_optimize.py) | Study of dropout layers in model 2 |
+| [Light GBM](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/ubiquant-gbm2.ipynb) | Light GBM notebook for feature importance and model training |
+| [EDA and Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/lstm-0-eda-and-clustering.ipynb) | EDA and hierarchical clustering of investment IDs using Pearson correlations |
+| [Data Preparation (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/lstm-1-data-preperation.ipynb) | Data pre-proccessing for multi-variate time series model with LSTM |
+| [Training (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/lstm-2-training.ipynb) | Training of multi-variate time series model with LSTM |
+| [Time Series Forcasting](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/lstm-3-submission.ipynb) | Preditict target using multi-variate time series model with LSTM |
 
 ## 2. Competition Description
 Competion Description taken from Kaggle:
@@ -155,8 +156,9 @@ In conclusion we would like to mention a few ideas that due to time constraints 
 4. [*End to end simple and powerful DNN with LeakyReLU*](https://www.kaggle.com/pythonash/end-to-end-simple-and-powerful-dnn-with-leakyrelu) by pythonash
 5. [*Using LightGBM for feature selection*](https://www.kaggle.com/melanie7744/using-lightgbm-for-feature-selection) by Melanie774
 6. [*Ubiquant Market Prediction [ DNN ]*](https://www.kaggle.com/shamiaaftab/ubiquant-market-prediction-dnn) by Shamia Aftab
-7. NVIDIA course: [Modeling Time Series Data with Recurrent Neural Networks in Keras](https://courses.nvidia.com/courses/course-v1:DLI+L-FX-24+V1/about)
-8. [Keras: Multiple Inputs and Mixed Data](https://pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/)
+7. [*【Infer】DNN model ensemble*](https://www.kaggle.com/librauee/infer-dnn-model-ensemble) by 老肥
+8. NVIDIA course: [Modeling Time Series Data with Recurrent Neural Networks in Keras](https://courses.nvidia.com/courses/course-v1:DLI+L-FX-24+V1/about)
+9. [Keras: Multiple Inputs and Mixed Data](https://pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/)
 ## 7. Authors
 * [Amy](https://github.com/AmyRouillard)
 * [Nancy](https://github.com/NancyArmah)
