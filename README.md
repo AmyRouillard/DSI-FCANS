@@ -8,7 +8,7 @@ This repository details the work done by Team C for the [Africa Data Science Int
 
 | File  | Description |
 |---|---|
-| [Main Notebook](https://github.com/AmyRouillard/DSI-FCANS/blob/main/main-notebook-team-c.ipynb) | Main notebook with EDA and Discussions on Models |
+| [Main Notebook](https://github.com/AmyRouillard/DSI-FCANS/blob/main/main-notebook-teamc.ipynb) | Main notebook with EDA and Discussions on Models |
 | [Ensemble Inference](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/ensemble-model-fscans.ipynb) | Notebook that loads weights and makes ensemble prediction |
 | [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/dnn-base-model-1.ipynb) | Model 1 DNN Model used in Ensemble Model |
 | [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/main/notebooks/model-2-10fold-model-2.ipynb) | Model 2 DNN Model used in Ensemble Model |
