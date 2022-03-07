@@ -35,10 +35,9 @@ Competion Description taken from Kaggle:
 * **target** - The target.
 * **[f_0:f_299]** - Anonymized features generated from market data.
 
-## 4. Model
 
 
-## 5. Other Approaches 
+## 4. Approaches 
 
 With all the models we used for this project, we tried different fine-tuning approaches hoping for better model performance. In this section, we will discuss and show all the fine tunings and different activation functions we tried and show their performance and final scores.
 
@@ -126,10 +125,11 @@ The research we did showed Mish worked better than the Swish activation function
 | **Score**         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
 
 
-## 6. Conclusions
+## 5. Conclusions
 
+In conclusion we would like to mention a few ideas that due to time constraints we were unable to investigate further but that we believe could have the potential to improve our DNN ensemble model score. The first would be to find the optimal weighted average of the model predations. The second would be to perform more in-depth parameter tuning. For example, the optuna library could be used to optimize the number of layers. Finally, we would have liked to test the effectiveness of combining the results of the LGBM to reduce the number of features input to the DNN.
 
-## 7. References
+## 6. References
 1. [Keras Documentation](https://keras.io/api/)
 2. [Optuna](https://optuna.readthedocs.io/en/stable/)
 3. [*Fast Data Loading and Low Mem with Parquet Files*](https://www.kaggle.com/robikscube/fast-data-loading-and-low-mem-with-parquet-files) by Rob Mulla
@@ -138,7 +138,7 @@ The research we did showed Mish worked better than the Swish activation function
 6. [*Ubiquant Market Prediction [ DNN ]*](https://www.kaggle.com/shamiaaftab/ubiquant-market-prediction-dnn) by Shamia Aftab
 7. NVIDIA course: [Modeling Time Series Data with Recurrent Neural Networks in Keras](https://courses.nvidia.com/courses/course-v1:DLI+L-FX-24+V1/about)
 8. [Keras: Multiple Inputs and Mixed Data](https://pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/)
-## 8. Authors
+## 7. Authors
 * [Amy](https://github.com/AmyRouillard)
 * [Nancy](https://github.com/NancyArmah)
 * [Chris](https://github.com/chrisliti)
