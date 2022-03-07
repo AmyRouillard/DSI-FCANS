@@ -132,6 +132,12 @@ The research we did showed Mish worked better than the Swish activation function
 ## 7. References
 1. [Keras Documentation](https://keras.io/api/)
 2. [Optuna](https://optuna.readthedocs.io/en/stable/)
+3. [*Fast Data Loading and Low Mem with Parquet Files*](https://www.kaggle.com/robikscube/fast-data-loading-and-low-mem-with-parquet-files) by Rob Mulla
+4. [*End to end simple and powerful DNN with LeakyReLU*](https://www.kaggle.com/pythonash/end-to-end-simple-and-powerful-dnn-with-leakyrelu) by pythonash
+5. [*Using LightGBM for feature selection*](https://www.kaggle.com/melanie7744/using-lightgbm-for-feature-selection) by Melanie774
+6. [*Ubiquant Market Prediction [ DNN ]*](https://www.kaggle.com/shamiaaftab/ubiquant-market-prediction-dnn) by Shamia Aftab
+7. NVIDIA course: [Modeling Time Series Data with Recurrent Neural Networks in Keras](https://courses.nvidia.com/courses/course-v1:DLI+L-FX-24+V1/about)
+8. [Keras: Multiple Inputs and Mixed Data](https://pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/)
 ## 8. Authors
 * [Amy](https://github.com/AmyRouillard)
 * [Nancy](https://github.com/NancyArmah)
