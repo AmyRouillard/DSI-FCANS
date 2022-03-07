@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=2
+ReferrerUrl=http://localhost:8889/notebooks/Downloads/base-model-dnn.ipynb
+HostUrl=http://localhost:8889/
