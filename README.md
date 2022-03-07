@@ -13,11 +13,9 @@ This repository details the work done by Team C for the [Africa Data Science Int
 | [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb) | Model 1 DNN Model used in Ensemble Model |
 | [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-2-10fold-model-2.ipynb) | Model 2 DNN Model used in Ensemble Model |
 | [Model 3 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-3-10fold.ipynb) | Model 3 DNN Model used in Ensemble Model |
-| place holder  | place holder |
-| place holder |  place holder |
 | [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/investment-id-clustering.ipynb) | Kmeans Clustering of Investment IDs |
-| Model 1 DNN Optimization | Study of relu activation Vs swish activation |
-| Model 2 DNN Optimization | Study of dropout layers in DNN |
+| [Model 1 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/base_optimize.py) | Study of relu activation Vs swish activation in model 1 |
+| [Model 2 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/model2_optimize.py) | Study of dropout layers in model 2 |
 | [EDA and Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-0-eda-and-clustering.ipynb) | EDA and hierarchical clustering of investment IDs using Pearson correlations |
 | [Data Preparation (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-1-data-preperation.ipynb) | Data pre-proccessing for multi-variate time series model with LSTM |
 | [Training (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-2-training.ipynb) | Training of multi-variate time series model with LSTM |
