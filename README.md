@@ -125,7 +125,7 @@ The research we did showed Mish worked better than the Swish activation function
 | **Pearson Corr.** | 0.1380 | 0.1280 | 0.1314 | 0.1338 | 0.1434 | 0.1319 |
 | **Score**         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
 
-### Optuna Study for Swish and Relu Activation on Model 1 Base DNN
+### Optuna Study for Swish and Relu Activation on [Model 1 Base DNN](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb)
 
 An [optuna](https://optuna.org/) optimization study was carried out to evaluate the performance of the swish and activation functions using the script [here](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/base_optimize.py). The DNN was set to run 4 epochs for each trial run and 30 trials were carried out. The results for the MSE score obtained from the study are shown below,
 
@@ -133,11 +133,15 @@ An [optuna](https://optuna.org/) optimization study was carried out to evaluate 
 
 The swish activation function performs slightly better as earlier investigated. 
 
-### Optuna Study for Dropout layers in Model 2 DNN
+### Optuna Study for Dropout layers in [Model 2 DNN](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/model2_optimize.py)
 
-A study was also carried out to investigate the effect of the two dropout layers in Model 2. The DNN was set to run 4 epochs for each trial run and 50 trials were carried out. The results for the MSE score obtained from the study are shown below,
+A study was also carried out to investigate the effect of the two dropout layers in Model 2. The DNN was set to run 4 epochs for each trial run and 100 trials were carried out. The dropout variables "dropout_1" and "dropout_2" were optimized for a range of 0.1 to 0.9. The best value was obtained at {'dropout_1': 0.13889522793629328, 'dropout_2': 0.694167488259274}. The results for the MSE score obtained from the study are shown below,
 
+![parameter importance](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/importance.png)
 
+![parallel plot](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/parallel.png)
+
+![optimization histor](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/optimization_history.png)
 
 
 ## 5. Conclusions
