@@ -13,11 +13,9 @@ This repository details the work done by Team C for the [Africa Data Science Int
 | [Model 1 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb) | Model 1 DNN Model used in Ensemble Model |
 | [Model 2 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-2-10fold-model-2.ipynb) | Model 2 DNN Model used in Ensemble Model |
 | [Model 3 Training](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/model-3-10fold.ipynb) | Model 3 DNN Model used in Ensemble Model |
-| place holder  | place holder |
-| place holder |  place holder |
 | [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/investment-id-clustering.ipynb) | Kmeans Clustering of Investment IDs |
-| Model 1 DNN Optimization | Study of relu activation Vs swish activation |
-| Model 2 DNN Optimization | Study of dropout layers in DNN |
+| [Model 1 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/base_optimize.py) | Study of relu activation Vs swish activation in model 1 |
+| [Model 2 DNN Optimization](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/model2_optimize.py) | Study of dropout layers in model 2 |
 | [EDA and Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-0-eda-and-clustering.ipynb) | EDA and hierarchical clustering of investment IDs using Pearson correlations |
 | [Data Preparation (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-1-data-preperation.ipynb) | Data pre-proccessing for multi-variate time series model with LSTM |
 | [Training (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-2-training.ipynb) | Training of multi-variate time series model with LSTM |
@@ -126,6 +124,24 @@ The research we did showed Mish worked better than the Swish activation function
 | **Epochs**        | 30     | 50     | 50     |  100   | 50     | 30     |
 | **Pearson Corr.** | 0.1380 | 0.1280 | 0.1314 | 0.1338 | 0.1434 | 0.1319 |
 | **Score**         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
+
+### Optuna Study for Swish and Relu Activation on [Model 1 Base DNN](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/dnn-base-model-1.ipynb)
+
+An [optuna](https://optuna.org/) optimization study was carried out to evaluate the performance of the swish and activation functions using the script [here](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/base_optimize.py). The DNN was set to run 4 epochs for each trial run and 30 trials were carried out. The results for the MSE score obtained from the study are shown below,
+
+![activation study](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/activation_study.png)
+
+The swish activation function performs slightly better as earlier investigated. 
+
+### Optuna Study for Dropout layers in [Model 2 DNN](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/model2_optimize.py)
+
+A study was also carried out to investigate the effect of the two dropout layers in Model 2. The DNN was set to run 4 epochs for each trial run and 100 trials were carried out. The dropout variables "dropout_1" and "dropout_2" were optimized for a range of 0.1 to 0.9. The best value was obtained at {'dropout_1': 0.13889522793629328, 'dropout_2': 0.694167488259274}. The results for the MSE score obtained from the study are shown below,
+
+![parameter importance](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/importance.png)
+
+![parallel plot](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/parallel.png)
+
+![optimization histor](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/optimization_history.png)
 
 
 ## 5. Conclusions
