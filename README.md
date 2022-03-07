@@ -125,6 +125,20 @@ The research we did showed Mish worked better than the Swish activation function
 | **Pearson Corr.** | 0.1380 | 0.1280 | 0.1314 | 0.1338 | 0.1434 | 0.1319 |
 | **Score**         | 0.143  | 0.146  | 0.143  | 0.143  | 0.146  | 0.143  |
 
+### Optuna Study for Swish and Relu Activation on Model 1 Base DNN
+
+An [optuna](https://optuna.org/) optimization study was carried out to evaluate the performance of the swish and activation functions using the script [here](https://github.com/AmyRouillard/DSI-FCANS/blob/development/scripts/base_optimize.py). The DNN was set to run 4 epochs for each trial run and 30 trials were carried out. The results for the MSE score obtained from the study are shown below,
+
+![activation study](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/activation_study.png)
+
+The swish activation function performs slightly better as earlier investigated. 
+
+### Optuna Study for Dropout layers in Model 2 DNN
+
+A study was also carried out to investigate the effect of the two dropout layers in Model 2. The DNN was set to run 4 epochs for each trial run and 50 trials were carried out. The results for the MSE score obtained from the study are shown below,
+
+
+
 
 ## 5. Conclusions
 
