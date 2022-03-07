@@ -2,7 +2,7 @@
 ![cover](https://github.com/AmyRouillard/DSI-FCANS/blob/development/images/cover_image.png)
 
 ## 1. Introduction
-This repository details the work done by Team C for the [Africa Data Science Intensive (DSI) program](http://dsi-program.com/) Module 2 task. The goal of the task was to compete in the time-series prediction competition by [Ubiquant](https://www.kaggle.com/c/ubiquant-market-prediction) on Kaggle. Time-series forecasting is a critical part of data science with many use cases such as epidimeology, inventory planning for businesses, stock trading etc. The different models and approaches used for the competition are detailed here.  
+This repository details the work done by Team C for the [Africa Data Science Intensive (DSI) program](http://dsi-program.com/) Module 2 task. The goal of the task was to compete in the time-series prediction competition by [Ubiquant](https://www.kaggle.com/c/ubiquant-market-prediction) on Kaggle. Time-series forecasting is a critical part of data science with many use cases such as epidimeology, inventory planning for businesses, stock trading etc. The different models and approaches used for the competition are detailed here and in our main notebook.  
 
 ### Code Files
 
@@ -71,7 +71,7 @@ For the hyperparameter tuning, we modified the Dropout Rate, Learning Rate, and 
 
 *source: https://neptune.ai/blog/lightgbm-parameters-guide*
 
-In the first notebook, we ran the model without a learning rate and a max_depth but applied it to the last two runs to compare results. It had no effect on the performance of the model
+In the first notebook, we ran the model wit a fixed learning rate and max_depth but adjusted these to the last two runs to compare results. It had no effect on the performance of the model
 Also, all 300 features were used initially before using the built-in function for plotting the feature importance which reduced the features to only 188. The metric for the important features is labeled 'new features' in the table above. The only difference the new features added was a drastic reduction in training time else, all other metrics remained the same.
 Fine-tuning the parameters of the LightGBM did not improve the model in any way. As seen from the table below, all the metrics and scores remained the same.
 
