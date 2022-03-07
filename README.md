@@ -18,7 +18,10 @@ This repository details the work done by Team C for the [Africa Data Science Int
 | [Investment_ID Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/investment-id-clustering.ipynb) | Kmeans Clustering of Investment IDs |
 | Model 1 DNN Optimization | Study of relu activation Vs swish activation |
 | Model 2 DNN Optimization | Study of dropout layers in DNN |
-
+| [EDA and Clustering](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-0-eda-and-clustering.ipynb) | EDA and hierarchical clustering of investment IDs using Pearson correlations |
+| [Data Preparation (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-1-data-preperation.ipynb) | Data pre-proccessing for multi-variate time series model with LSTM |
+| [Training (LSTM)](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-2-training.ipynb) | Training of multi-variate time series model with LSTM |
+| [Time Series Forcasting](https://github.com/AmyRouillard/DSI-FCANS/blob/development/notebooks/lstm-3-submission.ipynb) | Preditict target using multi-variate time series model with LSTM |
 
 ## 2. Competition Description
 Competion Description taken from Kaggle:
